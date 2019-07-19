@@ -1,0 +1,15 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: nextcloud-ingress
+  namespace: default
+spec:
+  rules:
+  - host: nextcloudk8sdev.cisel.lan
+    http:
+     paths:
+      - path:
+        backend:
+          serviceName: nextcloud
+          servicePort: 8080
