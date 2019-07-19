@@ -3,7 +3,7 @@
 ## Deploy
 kubectl create -f nextcloud-ingress.yaml
 
-helm install --name nextcloud stable/nextcloud
+helm install --name nextcloud -f values.yaml stable/nextcloud
 
 ## Tune
 helm upgrade nextcloud stable/nextcloud --set nextcloud.host=nextcloud.example.com
