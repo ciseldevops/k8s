@@ -1,5 +1,6 @@
 ## Deploy Tomcat using Helm
 kubectl create -f tomcat-ingress.yaml
+
 helm install --name tomcat -f values.yaml stable/tomcat  --set tomcat.hosts=www.example.com
 
 ## Validate
