@@ -1,0 +1,15 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: tomcat-ingress
+  namespace: default
+spec:
+  rules:
+  - host: tomcatk8sdev.cisel.lan
+    http:
+     paths:
+      - path:
+        backend:
+          serviceName: tomcat
+          servicePort: 80
