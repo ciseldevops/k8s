@@ -58,7 +58,7 @@ ingress:
   #        - nextcloud.kube.home
 
 nextcloud:
-  host: nextcloud.kube.home
+  host: nextcloud.example.com
   username: admin
   password: changeme
   update: 0
