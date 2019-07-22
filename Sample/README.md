@@ -1,5 +1,3 @@
-<h1>Sample devops Cisel deploy</h1>
-
 <h2>Commande d'installation</h2>
 <p>kubectl create -f https://github.com/ciseldevops/k8s/edit/master/Sample/sample.yaml </p>
 
