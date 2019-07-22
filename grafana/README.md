@@ -55,7 +55,7 @@ Ou la commande sans passer par notre repository :
 <p>Une fois le fichier modifié, les commandes suivantes sont utilisées pour la maj : <br/>
   <b>git clone https://github.com/ciseldevops/k8s.git </br>
   cd k8s/grafana </br>
-  helm upgrade <ReleaseLocalName> stable/grafana --values=values.yaml </b> </br>
+  helm upgrade ReleaseLocalName stable/grafana --values=values.yaml </b> </br>
   Le ReleaseLocalName correpond au nom de la realease en faisant par ex. helm list
 </p>
 
