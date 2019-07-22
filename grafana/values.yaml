@@ -242,7 +242,7 @@ plugins: []
 ## Configure grafana datasources
 ## ref: http://docs.grafana.org/administration/provisioning/#datasources
 ##
-datasources: {
+datasources: 
   datasources.yaml:
     apiVersion: 1
     datasources:
@@ -251,7 +251,7 @@ datasources: {
       url: http://prometheus-k8s.ntnx-system.svc.cluster.local:9090
       access: proxy
       isDefault: true
-}
+
 ## Configure notifiers
 ## ref: http://docs.grafana.org/administration/provisioning/#alert-notification-channels
 ##
