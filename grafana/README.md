@@ -1,5 +1,7 @@
 <h2>Commande d'installation</h2>
-<p><b>helm install -f https://github.com/ciseldevops/k8s/edit/master/grafana/values.yaml </b></p>
+<p><b>git clone https://github.com/ciseldevops/k8s.git </br>
+  cd k8s/grafana </br>
+  helm install stable/grafana --values=values.yaml</b></p>
 Ou la commande sans passer par notre repository : 
 <p>
   <b>helm install stable/grafana \ </b> </br>
