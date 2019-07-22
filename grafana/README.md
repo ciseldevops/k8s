@@ -50,7 +50,11 @@ Ou la commande sans passer par notre repository :
 </p>
 
 <h2>Procédure de maj</h2>
-<p>Modifier le fichier yaml : le tag du repository correspond à la version. Il peut être changé pour atteindre une nouvelle version</p>
+<p>Modifier le fichier yaml : le tag du repository correspond à la version. Il peut être changé pour atteindre une nouvelle version </br>
+ 
+  repository: grafana/grafana </br>
+  tag: 6.2.5
+</p>
 <p>Une fois le fichier modifié, les commandes suivantes sont utilisées pour mettre à jour le pod :<br/>
   kubectl delete -f https://github.com/ciseldevops/k8s/edit/master/Sample/sample.yaml <br/>
   kubectl create -f https://github.com/ciseldevops/k8s/edit/master/Sample/sample.yaml
