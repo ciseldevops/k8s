@@ -1,8 +1,8 @@
 <h2>Commande d'installation</h2>
-<p>helm install -f https://github.com/ciseldevops/k8s/edit/master/grafana/values.yaml </p>
+<p><b>helm install -f https://github.com/ciseldevops/k8s/edit/master/grafana/values.yaml </b></p>
 Ou la commande sans passer par notre repository : 
 <p>
-  helm install stable/grafana \ </br>
+  <b>helm install stable/grafana \ </b> </br>
 --name grafana \  </br>
 --namespace ntnx-system \ </br>
 --set persistence.enabled=true \ </br>
