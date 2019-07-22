@@ -4,8 +4,8 @@
 <h2>Procédure de maj</h2>
 <p>Modifier le fichier yaml : le tag du repository correspond à la version. Il peut être changé pour atteindre une nouvelle version</p>
 <p>Une fois le fichier modifié, les commandes suivantes sont utilisées pour mettre à jour le pod :<br/>
-  <b>kubectl delete -f https://github.com/ciseldevops/k8s/edit/master/Sample/sample.yaml</b> <br/>
-  <b>kubectl create -f https://github.com/ciseldevops/k8s/edit/master/Sample/sample.yaml</b>
+  kubectl delete -f https://github.com/ciseldevops/k8s/edit/master/Sample/sample.yaml <br/>
+  kubectl create -f https://github.com/ciseldevops/k8s/edit/master/Sample/sample.yaml
 </p>
 
 <h2>Test et accès</h2>
