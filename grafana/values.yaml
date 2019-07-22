@@ -85,7 +85,7 @@ downloadDashboardsImage:
 ## ref: http://kubernetes.io/docs/user-guide/services/
 ##
 service:
-  type: NodePort
+  type: ClusterIP
   port: 80
   targetPort: 3000
     # targetPort: 4181 To be used with a proxy extraContainer
@@ -93,14 +93,14 @@ service:
   labels: {}
 
 ingress:
-  enabled: true
+  enabled: false
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   labels: {}
   path: /
   hosts:
-    - grafanak8sdev2.cisel.lan
+    - chart-example.local
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
@@ -152,7 +152,7 @@ extraContainers: |
 ## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/
 ##
 persistence:
-  enabled: true
+  enabled: false
   # storageClassName: default
   accessModes:
     - ReadWriteOnce
@@ -239,22 +239,19 @@ plugins: []
   # - digrich-bubblechart-panel
   # - grafana-clock-panel
 
-
-
-
 ## Configure grafana datasources
 ## ref: http://docs.grafana.org/administration/provisioning/#datasources
 ##
-datasources: {
-  datasources.yaml:
-    apiVersion: 1
-    datasources:
-    - name: Prometheus
-      type: prometheus
-      url: http://prometheus-k8s.ntnx-system.svc.cluster.local:9090
-      access: proxy
-      isDefault: true
-}
+datasources: {}
+#  datasources.yaml:
+#    apiVersion: 1
+#    datasources:
+#    - name: Prometheus
+#      type: prometheus
+#      url: http://prometheus-prometheus-server
+#      access: proxy
+#      isDefault: true
+
 ## Configure notifiers
 ## ref: http://docs.grafana.org/administration/provisioning/#alert-notification-channels
 ##
@@ -278,19 +275,19 @@ notifiers: {}
 ##
 ## `path` must be /var/lib/grafana/dashboards/<provider_name>
 ##
-dashboardProviders: {
-  dashboardproviders.yaml:
-    apiVersion: 1
-    providers:
-    - name: 'default'
-      orgId: 1
+dashboardProviders: {}
+#  dashboardproviders.yaml:
+#    apiVersion: 1
+#    providers:
+#    - name: 'default'
+#      orgId: 1
 #      folder: ''
-      type: file
-      disableDeletion: false
+#      type: file
+#      disableDeletion: false
 #      editable: true
-      options:
-        path: /var/lib/grafana/dashboards/default
-}
+#      options:
+#        path: /var/lib/grafana/dashboards/default
+
 ## Configure grafana dashboard to import
 ## NOTE: To use dashboards you must also enable/configure dashboardProviders
 ## ref: https://grafana.com/dashboards
