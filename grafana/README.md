@@ -61,6 +61,8 @@ Ou la commande sans passer par notre repository :
   Le ReleaseLocalName correpond au nom de la realease en faisant par ex. helm list
 </p>
 
+<h2>Clean</h2>
+<p>helm delete -f ... --purge</p>
 <h2>Test et accès</h2>
 <p>En interne : <b>http://grafanak8sdev.cisel.lan</b></p>
 
