@@ -1,4 +1,4 @@
-<h2>Commande d'installation</h2>
+<h2>Install</h2>
 <p><b>git clone https://github.com/ciseldevops/k8s.git </br>
   cd k8s/grafana </br>
   helm install stable/grafana --values=values.yaml</b></p>
