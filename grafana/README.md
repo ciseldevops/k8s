@@ -1,3 +1,5 @@
+<h2>Description</h2>
+<p>Description de l'application à déployer</p>
 <h2>Install</h2>
 <p><b>git clone https://github.com/ciseldevops/k8s.git </br>
   cd k8s/grafana </br>
@@ -49,7 +51,7 @@ Ou la commande sans passer par notre repository :
 --set service.type=NodePort </br>
 </p>
 
-<h2>Procédure de maj</h2>
+<h2>Upgrade</h2>
 <p>Modifier le fichier yaml : le tag du repository correspond à la version. Il peut être changé pour atteindre une nouvelle version </br>
 </p>
 <p>Une fois le fichier modifié, les commandes suivantes sont utilisées pour la maj : <br/>
