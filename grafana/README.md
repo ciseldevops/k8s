@@ -1,9 +1,7 @@
 <h2>Description</h2>
 <p>Description de l'application à déployer</p>
 <h2>Install</h2>
-<p><b>git clone https://github.com/ciseldevops/k8s.git </br>
-  cd k8s/grafana </br>
-  helm install stable/grafana --values=values.yaml</b></p>
+<p><b>helm install stable/grafana --values=https://raw.githubusercontent.com/ciseldevops/k8s/master/grafana/values.yaml</b></p>
 Ou la commande sans passer par notre repository : 
 <p>
   <b>helm install stable/grafana \ </b> </br>

@@ -1,10 +1,7 @@
 <h2>Description</h2>
 <p>Traefik as an Ingress controller for a Kubernetes cluster</p>
 <h2>Install</h2>
-<p><b>git clone https://github.com/ciseldevops/k8s.git </br>
-  cd k8s/grafana </br>
-  helm install stable/grafana --values=values.yaml</b></p>
-
+<p><b>helm install stable/grafana --values=https://raw.githubusercontent.com/ciseldevops/k8s/master/traefik/values.yaml</b></p>
 
 <h2>Upgrade</h2>
 <p>Modifier le fichier yaml : le tag du repository correspond à la version. Il peut être changé pour atteindre une nouvelle version </br>
