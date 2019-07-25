@@ -52,7 +52,7 @@ Ou la commande sans passer par notre repository :
 <h2>Upgrade</h2>
 <p>Modifier le fichier yaml : le tag du repository correspond à la version. Il peut être changé pour atteindre une nouvelle version </br>
 </p>
-<p>helm upgrade ReleaseLocalName stable/grafana --values=https://raw.githubusercontent.com/ciseldevops/k8s/master/grafana/values.yaml </b> </br>
+<p><b>helm upgrade ReleaseLocalName stable/grafana --values=https://raw.githubusercontent.com/ciseldevops/k8s/master/grafana/values.yaml </b> </br>
   Le ReleaseLocalName correpond au nom de la realease en faisant par ex. helm list
 </p>
 
