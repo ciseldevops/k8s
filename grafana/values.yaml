@@ -100,7 +100,7 @@ ingress:
   labels: {}
   path: /
   hosts:
-    - grafanak8sdev2.cisel.lan
+    - grafanak8sdev.cisel.lan
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
