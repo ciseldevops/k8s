@@ -2,7 +2,7 @@
 <p>Traefik as an Ingress controller for a Kubernetes cluster</p>
 <h2>Install</h2>
 <p>
-En premier, donner les droits avec <b>kubectl apply -f https://raw.githubusercontent.com/containous/traefik/v1.7/examples/k8s/traefik-rbac.yaml</b> <br/>
+En premier, donner les droits avec <br/> <b>kubectl apply -f https://raw.githubusercontent.com/containous/traefik/v1.7/examples/k8s/traefik-rbac.yaml</b> <br/>
 <b>kubectl apply -f https://raw.githubusercontent.com/ciseldevops/k8s/master/traefik/values.yaml</b>
 </p>
 
