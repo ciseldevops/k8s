@@ -52,15 +52,13 @@ Ou la commande sans passer par notre repository :
 <h2>Upgrade</h2>
 <p>Modifier le fichier yaml : le tag du repository correspond à la version. Il peut être changé pour atteindre une nouvelle version </br>
 </p>
-<p>Une fois le fichier modifié, les commandes suivantes sont utilisées pour la maj : <br/>
-  <b>git clone https://github.com/ciseldevops/k8s.git </br>
-  cd k8s/grafana </br>
-  helm upgrade ReleaseLocalName stable/grafana --values=values.yaml </b> </br>
+<p>helm upgrade ReleaseLocalName stable/grafana --values=https://raw.githubusercontent.com/ciseldevops/k8s/master/grafana/values.yaml </b> </br>
   Le ReleaseLocalName correpond au nom de la realease en faisant par ex. helm list
 </p>
 
 <h2>Clean</h2>
-<p>helm delete -f ... --purge</p>
+<p>helm delete HELMNAME --purge</p>
+<p>Remplacer le HELMNAME par le nom du helm retrouvé avec la commande helm list</p>
 <h2>Test et accès</h2>
 <p>En interne : <b>http://grafanak8sdev.cisel.lan</b></p>
 
