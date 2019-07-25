@@ -8,7 +8,6 @@
 </p>
 <p><b>
  kubectl rolling-update NAME -f https://raw.githubusercontent.com/ciseldevops/k8s/master/traefik/values.yaml </b> </br>
-  Le ReleaseLocalName correpond au nom de la realease en faisant par ex. helm list
 </p>
 
 <h2>Clean</h2>
