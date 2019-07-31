@@ -22,9 +22,9 @@ spec:
             - name: KANBAN_GITLAB_URL
               value: "https://gitlab.com"
             - name: KANBAN_GITLAB_CLIENT
-              value: "d2e449b01b734ad40d83553adc78dbf872f4b6bf7e3e968d279dd76cb0908018"
+              value: "CLIENT_ID"
             - name: KANBAN_GITLAB_SECRET
-              value: "03a34171018dd5609d3e256efbef4409934c6de11c72e184fd73fcbf41f1157a"
+              value: "SECRET_ID"
             - name: KANBAN_ENABLE_SIGNUP
               value: "true"
         - name: redis
