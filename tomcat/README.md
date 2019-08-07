@@ -18,6 +18,7 @@ helm upgrade tomcat stable/tomcat --values=https://raw.githubusercontent.com/cis
 
 ## Clean
 helm list
+
 helm delete tomcat --purge
 
 ## Infos
