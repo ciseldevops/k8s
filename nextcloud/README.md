@@ -1,20 +1,13 @@
 # Nextcloud deployment using Helm
 
 ## Deploy
-kubectl create -f nextcloud-ingress.yaml
+kubectl create -f https://raw.githubusercontent.com/ciseldevops/k8s/master/nextcloud/nextcloud-ingress.yaml
 
 Basic install:
-helm install --name nextcloud -f values.yaml stable/nextcloud
-
-Advanced install:
-helm install --name nextcloud -f values.yaml stable/nextcloud --set nextcloud.password=******,nextcloud.host=nextcloud.example.com
+helm install --name nextcloud stable/nextcloud --values=https://raw.githubusercontent.com/ciseldevops/k8s/master/nextcloud/values.yaml --set nextcloud.password=******,nextcloud.host=nextcloudk8sdev.cisel.lan
 
 ## Tune
-helm upgrade nextcloud -f values.yaml stable/nextcloud --set nextcloud.password=******,nextcloud.host=nextcloud.example.com
+helm upgrade nextcloud stable/nextcloud --values=https://raw.githubusercontent.com/ciseldevops/k8s/master/nextcloud/values.yaml  --set nextcloud.password=******,nextcloud.host=nextcloud.example.com
 
 ## Validate
-kubectl get service
-
-kubectl get pods
-
-http://nextcloud.example.com
+nextcloudk8sdev.cisel.lan
