@@ -58,7 +58,7 @@ ingress:
   #        - nextcloud.kube.home
 
 nextcloud:
-  host: nextcloud.example.com
+  host: nextcloudk8sdev.cisel.lan
   username: admin
   password: changeme
   update: 0
@@ -140,7 +140,7 @@ mariadb:
   ## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/
   ##
   persistence:
-    enabled: false
+    enabled: true
     accessMode: ReadWriteOnce
     size: 8Gi
 
@@ -170,7 +170,7 @@ service:
 ## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/
 ##
 persistence:
-  enabled: false
+  enabled: true
   ## nextcloud data Persistent Volume Storage Class
   ## If defined, storageClassName: <storageClass>
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
