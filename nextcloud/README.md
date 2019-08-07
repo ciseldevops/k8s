@@ -14,4 +14,5 @@ nextcloudk8sdev.cisel.lan
 
 ## Clean
 helm list
+
 helm delete --purge nextcloud
