@@ -11,8 +11,9 @@ http://tomcatk8sdev.cisel.lan/sample/
 
 ## Upgrade/Resize
 Modifier le fichier yaml : 
- - le tag du repository correspond à la version. Il peut être changé pour atteindre une nouvelle version
- - replicaCount correspond au nombre de pods. Il peut être changé pour atteindre un nouveau nombre de réplicats
+le tag du repository correspond à la version. Il peut être changé pour atteindre une nouvelle version
+replicaCount correspond au nombre de pods. Il peut être changé pour atteindre un nouveau nombre de réplicats
+ 
 helm upgrade tomcat stable/tomcat --values=https://raw.githubusercontent.com/ciseldevops/k8s/master/tomcat/values.yaml
 
 ## Clean
