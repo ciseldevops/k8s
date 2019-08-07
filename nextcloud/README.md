@@ -3,7 +3,7 @@
 ## Deploy
 kubectl create -f https://raw.githubusercontent.com/ciseldevops/k8s/master/nextcloud/nextcloud-ingress.yaml
 
-helm install --name nextcloud stable/nextcloud --values=https://raw.githubusercontent.com/ciseldevops/k8s/master/nextcloud/values.yaml --set nextcloud.password=******,nextcloud.host=nextcloudk8sdev.cisel.lan
+helm install --name nextcloud stable/nextcloud --values=https://raw.githubusercontent.com/ciseldevops/k8s/master/nextcloud/values.yaml
 
 ## Upgrade
 helm upgrade nextcloud stable/nextcloud --values=https://raw.githubusercontent.com/ciseldevops/k8s/master/nextcloud/values.yaml  --set nextcloud.password=******,nextcloud.host=nextcloud.example.com
