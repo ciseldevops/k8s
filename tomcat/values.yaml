@@ -29,7 +29,9 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   path: /
   hosts:
-    - WWW.EXAMPLE.COM
+    - tomcatk8sdev.cisel.lan
+  serviceName: tomcat
+  servicePort: 80
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
