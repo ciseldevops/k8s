@@ -188,7 +188,7 @@ readinessProbe:
   timeoutSeconds: 5
   failureThreshold: 3
   successThreshold: 1
-  port:3333
+  port: 3333
 
 nodeSelector: {}
 
