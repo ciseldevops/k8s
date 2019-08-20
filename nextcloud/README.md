@@ -1,7 +1,6 @@
 # Nextcloud deployment using Helm
 
 ## Deploy
-kubectl create -f https://raw.githubusercontent.com/ciseldevops/k8s/master/nextcloud/nextcloud-ingress.yaml
 
 helm install --name nextcloud stable/nextcloud --values=https://raw.githubusercontent.com/ciseldevops/k8s/master/nextcloud/values.yaml
 
