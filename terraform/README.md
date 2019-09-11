@@ -1,5 +1,5 @@
 <h2>Commande d'installation</h2>
-<p>kubectl create -f https://github.com/ciseldevops/k8s/edit/master/Sample/sample.yaml </p>
+<p>kubectl create -f https://raw.githubusercontent.com/ciseldevops/k8s/master/terraform/terraform.yaml </p>
 
 <h2>Procédure de maj</h2>
 <p>Modifier le fichier yaml : le tag du repository correspond à la version. Il peut être changé pour atteindre une nouvelle version</p>
