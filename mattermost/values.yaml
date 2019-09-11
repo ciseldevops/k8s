@@ -56,7 +56,7 @@ ingress:
     #### http-snippet: |
     ####     proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=mattermost_cache:10m max_size=3g inactive=120m use_temp_path=off;
   hosts:
-    - WWW.EXAMPLE.COM
+    - mattermostk8sdev.cisel.lan
   tls:
     # - secretName: mattermost.example.com-tls
     #   hosts:
